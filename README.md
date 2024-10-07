@@ -57,8 +57,8 @@ This project is built using the following technology stack:
 4. In persistence.xml, set the following properties:
    
     ```xml
+    <property name="jakarta.persistence.jdbc.user" value="******"/>
     <property name="jakarta.persistence.jdbc.password" value="******"/>
-    <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
     ```
 ---
 
