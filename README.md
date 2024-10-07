@@ -61,6 +61,33 @@ This project is built using the following technology stack:
 
 ---
 
+## 6. API Endpoints
+
+The application provides two main API endpoints:
+
+1. **Get Popular Points of Interest**  
+   Returns all points of interest with a request count greater than the specified value.
+   - **Endpoint**: `GET /api/v1/pois/popular`
+   - **Example Request**:
+     ```http
+     http://localhost:8080/api/v1/pois/popular?count=0
+     ```
+   - **Query Parameters**:
+     - `count` (integer): The minimum number of requests a point of interest must have to be returned.
+  
+2. **Get Nearest Point of Interest**  
+   Returns the nearest point of interest to the specified latitude and longitude.
+   - **Endpoint**: `GET /api/v1/pois/nearest`
+   - **Example Request**:
+     ```http
+     http://localhost:8080/api/v1/pois/nearest?latitude=43.7696&longitude=11.2558
+     ```
+   - **Query Parameters**:
+     - `latitude` (double): The latitude of the location.
+     - `longitude` (double): The longitude of the location.
+
+---
+
 ## How to Run
 
 1. Ensure **MySQL** is running with the necessary credentials and the POI database is properly configured.
