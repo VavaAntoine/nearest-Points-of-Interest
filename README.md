@@ -70,7 +70,7 @@ The application provides two main API endpoints:
    - **Endpoint**: `GET /api/v1/pois/popular`
    - **Example Request**:
      ```http
-     http://localhost:8080/api/v1/pois/popular?count=0
+     http://localhost:8080/api/v1/pois/popular?count={count-value}
      ```
    - **Query Parameters**:
      - `count` (integer): The minimum number of requests a point of interest must have to be returned.
@@ -80,7 +80,7 @@ The application provides two main API endpoints:
    - **Endpoint**: `GET /api/v1/pois/nearest`
    - **Example Request**:
      ```http
-     http://localhost:8080/api/v1/pois/nearest?latitude=43.7696&longitude=11.2558
+     http://localhost:8080/api/v1/pois/nearest?latitude={latitude-value}&longitude={longitude-value}
      ```
    - **Query Parameters**:
      - `latitude` (double): The latitude of the location.
