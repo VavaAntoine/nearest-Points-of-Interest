@@ -1,0 +1,10 @@
+com\innovus\nearestpoi\exception\PointOfInterestNotFoundException.class
+com\innovus\nearestpoi\resources\PointOfInterestResource.class
+com\innovus\nearestpoi\exception\ValidationExceptionMapper.class
+com\innovus\nearestpoi\resources\TestResource.class
+com\innovus\nearestpoi\service\impl\PointOfInterestServiceImpl.class
+com\innovus\nearestpoi\service\PointOfInterestService.class
+com\innovus\nearestpoi\repository\PointOfInterestRepository.class
+com\innovus\nearestpoi\ApplicationConfig.class
+com\innovus\nearestpoi\entity\PointOfInterest.class
+com\innovus\nearestpoi\dto\PointOfInterestDTO.class
