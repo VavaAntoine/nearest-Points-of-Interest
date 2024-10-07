@@ -1,6 +1,3 @@
-# nearest-Points-of-Interest
-REST API fed with location data
-
 # Nearest Points of Interest (POI) Application
 
 This project is built using the following technology stack:
