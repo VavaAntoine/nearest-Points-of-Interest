@@ -79,7 +79,7 @@ The application provides two main API endpoints:
      http://localhost:8080/api/v1/pois/popular?count={count-value}
      ```
    - **Query Parameters**:
-     - `count` (integer): The minimum number of requests a point of interest must have to be returned.
+     - `count` (integer): The minimum threshold. Only points of interest with a request count greater than this value will be returned.
   
 2. **Get Nearest Point of Interest**  
    Returns the nearest point of interest to the specified latitude and longitude.
