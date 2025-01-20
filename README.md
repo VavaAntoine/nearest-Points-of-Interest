@@ -1,6 +1,37 @@
 # Nearest Points of Interest (POI) Application
 
-This project is built using the following technology stack:
+This application provides a RESTful API for managing and retrieving points of interest (POIs) based on geospatial data. Users can find the nearest POI to a given location or fetch popular POIs based on their request count. The system is designed with performance in mind, utilizing server-side caching and a geospatial database for efficient queries.
+
+---
+
+## API Features
+
+- **Location-based Input**  
+  - Accepts location data in the form of latitude and longitude coordinates.
+
+- **Nearest Point Retrieval**  
+  - Returns the name of the nearest point of interest (POI) to the provided coordinates.
+  - Leverages a geospatial database for accurate and efficient location queries.
+
+- **Caching**  
+  - Implements server-side (in-memory) caching to avoid repeated database scans.
+
+## Database Design
+
+- **Geospatial Data**  
+  - Stores POI coordinates using a geospatial data type.
+
+- **Request Counting**  
+  - Each POI maintains a counter that increments by +1 whenever it is identified as the closest point in a request.
+
+## Additional API Method
+
+- **Filtered Points Retrieval**  
+  - Retrieves POIs with a request count exceeding a specified threshold.
+
+---
+
+# Technology Stack
 
 - **JDK 17**
 - **Jakarta EE 10**
